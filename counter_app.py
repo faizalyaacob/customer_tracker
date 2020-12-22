@@ -1,10 +1,9 @@
-from mylib.centroidtracker import CentroidTracker
-from mylib.trackableobject import TrackableObject
-from imutils.video import VideoStream
+from centroidtracker import CentroidTracker
+from trackableobject import TrackableObject
 from imutils.video import FPS
-from mylib.mailer import Mailer
-from mylib import config, thread
-import time, schedule, csv
+from mailer import Mailer
+import config, thread
+import time, schedule
 import numpy as np
 import argparse, imutils
 import time, dlib, cv2, datetime
@@ -45,7 +44,7 @@ def Stream():
 
 
         # load our serialized model from disk
-        net = cv2.dnn.readNetFromCaffe("mobilenet_ssd/MobileNetSSD_deploy.prototxt", "mobilenet_ssd/MobileNetSSD_deploy.caffemodel")
+        net = cv2.dnn.readNetFromCaffe("MobileNetSSD_deploy.prototxt", "MobileNetSSD_deploy.caffemodel")
 
         
         
