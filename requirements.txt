@@ -1,8 +1,6 @@
-schedule
-numpy
-argparse
-imutils
-dlib
-opencv-python
-scipy
-streamlit
+numpy==1.18.2
+imutils==0.5.3
+dlib==19.18.0
+opencv-python==4.4.0.46
+scipy==1.4.1
+streamlit==0.73.0

@@ -3,10 +3,13 @@ from trackableobject import TrackableObject
 from imutils.video import FPS
 from mailer import Mailer
 import config, thread
-import time, schedule
+import time
 import numpy as np
-import argparse, imutils
-import time, dlib, cv2, datetime
+import imutils
+import time
+import cv2
+import dlib
+import datetime
 from itertools import zip_longest
 import streamlit as st
 
@@ -319,14 +322,13 @@ def Stream():
 
 
 ##learn more about different schedules here: https://pypi.org/project/schedule/
-if config.Scheduler:
-	##Runs for every 1 second
-	#schedule.every(1).seconds.do(run)
-	##Runs at every day (9:00 am). You can change it.
-	schedule.every().day.at("9:00").do(Stream)
+# if config.Scheduler:
+# 	##Runs for every 1 second
+# 	#schedule.every(1).seconds.do(run)
+# 	##Runs at every day (9:00 am). You can change it.
+# 	schedule.every().day.at("9:00").do(Stream)
 
-	while 1:
-		schedule.run_pending()
+# 	while 1:
+# 		schedule.run_pending()
 
-else:
-	Stream()
+Stream()
