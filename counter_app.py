@@ -8,7 +8,6 @@ import numpy as np
 import imutils
 import time
 import cv2
-import dlib
 import datetime
 from itertools import zip_longest
 import streamlit as st
